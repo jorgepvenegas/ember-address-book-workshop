@@ -46,7 +46,10 @@
     <p>
       {{model.about}}
     </p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button" {{action 'editContact' model}}>Edit Contact</a></p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="#" role="button" {{action 'editContact' model}}>Edit Contact</a>
+      {{#link-to 'contacts'}}Back{{/link-to}}
+    </p>
   {{/if}}
 
 </div>
