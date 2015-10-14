@@ -1,0 +1,12 @@
+{{#each model as |c|}}
+	<div class="list-group">
+	  <a {{action 'viewContact' c}} class="list-group-item">
+	    <h4 class="list-group-item-heading">{{c.name}}</h4>
+			<address>
+				<strong>{{c.company}}</strong><br>
+				{{c.address}}<br>
+				<abbr title="Phone">P:</abbr> {{c.phone}}
+			</address>
+	  </a>
+	</div>
+{{/each}}
